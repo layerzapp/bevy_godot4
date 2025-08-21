@@ -1,7 +1,6 @@
 use bevy::{
-    app::{App, Update},
     ecs::{schedule::IntoScheduleConfigs, system::Res},
-    prelude::{AppExtStates, Commands, OnEnter, Query, Resource, States, in_state},
+    prelude::*,
     state::app::StatesPlugin,
 };
 use bevy_godot4::prelude::{

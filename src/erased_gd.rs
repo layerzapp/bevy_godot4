@@ -89,6 +89,13 @@ impl Clone for ErasedGdResource {
             resource_id: self.resource_id,
         }
     }
+
+    fn clone_from(&mut self, source: &Self)
+    where
+        Self:
+    {
+        *self = source.clone();
+    }
 }
 
 impl Drop for ErasedGdResource {
